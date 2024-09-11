@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="theme" >
+    <div class="main">
+      <nav>
+        <h1>To-Do List</h1>
+        <label for="theme" onclick="changetheme();">
+        <div class="button">
+          <div class="base">
+            <div class="trigger">
+              <div class="icod">
+                <i class="ri-moon-line"></i>
+              </div>
+              <div class="icol">
+                <i class="ri-sun-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+      </nav>
+      <main>
+        <div class="add-container">
+          <form action="" method="">
+            <div class="add-input">
+              <input type="text" placeholder="Task goes here..." class="task-input" required/>
+              <input type="date" name="" id="" class="date-input" required/>
+            </div>
+            <div class="add-button">
+              <button onclick="add();display();check();"><i class="ri-add-line"></i></button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tasks">
+          <div class="head">
+            <h2>Task</h2>
+            <h2>Date</h2>
+            <h2>Delete</h2>
+          </div>
+          <div class="tasklist">
+            <p style="color:grey">No tasks available at the moment</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
